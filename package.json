@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node --prof --expose-gc --inspect ./index.js"
+    "start": "node --prof --expose-gc --inspect ./index.js",
+    "test": "jest"
   },
   "license": "MIT",
   "dependencies": {
     "devtools": "^5.18.7",
+    "jest": "^25.1.0",
     "log-process-errors": "^5.0.3",
     "webdriverio": "^5.18.7"
   }

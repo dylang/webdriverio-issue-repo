@@ -1,12 +1,23 @@
-# Webdriver.io Issue Repo case
+# Webdriver.io Issue Repo cases
+
+# Browser does not close when killing Jest test that starts a browser
+
+ 1. https://github.com/webdriverio/webdriverio/issues/5052
+ 1. Run `yarn` or `npm install`
+ 1. `yarn test` or `npm test`.
+ 1. Control-c to kill process.
+ 1. Jest will exit but the browser will stay open.
 
 # Devtools: infinite recursive loop in devtools driver
 
  1. https://github.com/webdriverio/webdriverio/issues/5048
- 1. Run `yarn` or `npm install`, then `yarn start` or `npm start`.
+ 1. Run `yarn` or `npm install`
+ 1. `yarn start` or `npm start`.
  1. Control-c to kill process.
  1. Wait a few minutes...
- 1. Stack dump from another process that was still running.
+ 1. On the console you'll get a stack dump from the browser process that was still running.
+
+You can also use the chrome inspector at `chrome://inspect` to watch this happen.
 
 ```
 <--- Last few GCs --->
@@ -50,3 +61,4 @@ FATAL ERROR: Ineffective mark-compacts near heap limit Allocation failed - JavaS
 20: 0x100805c4c v8::internal::Runtime_GetProperty(int, v8::internal::Object**, v8::internal::Isolate*) [/Users/dgreene/.nvm/versions/node/v10.16.0/bin/node]
 21: 0x23aa1125be3d
 ```
+
