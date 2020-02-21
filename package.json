@@ -1,0 +1,14 @@
+{
+  "name": "webdriverio-issue-repo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --prof --expose-gc --inspect ./index.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "devtools": "^5.18.7",
+    "log-process-errors": "^5.0.3",
+    "webdriverio": "^5.18.7"
+  }
+}
